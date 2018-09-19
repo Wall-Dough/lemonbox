@@ -1,0 +1,52 @@
+﻿/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    color: black;
+    cursor: url("../img/hed.cur"), default;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* /roconize */
+#roconize {
+    cursor: pointer;
+    background: #3b3b43 url("img/lemonbox.jpg") no-repeat fixed center;
+    background-size: auto 100%;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#roconize a { color: white; }
+
+#roconize .roconize-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%)
+}
+
+#roconize #artist-info {
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    z-index: 1;
+    font-size: 1.5em;
+    background: black;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    opacity: .5;
+    transition: opacity .1s ease-in;
+}
+
+#roconize #artist-info:hover { opacity: 1; }
